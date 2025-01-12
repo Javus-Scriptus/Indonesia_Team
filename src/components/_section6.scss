@@ -1,0 +1,47 @@
+// ретинізовані зображення
+
+.section6 {
+    background-image: url('../img/section6/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .section6__video {
+        &.poster-img-1 {
+            &[poster="../img/section6/img-1.jpg"] {
+
+                @media (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi) {
+                    poster: url("../img/section6/img-1@2x.jpg");
+                }
+            }
+        }
+
+        &.poster-img-2 {
+            &[poster="../img/section6/img-2.jpg"] {
+
+                @media (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi) {
+                    poster: url("../img/section6/img-2@2x.jpg");
+                }
+            }
+        }
+
+        &.poster-img-3 {
+            &[poster="../img/section6/img-3.jpg"] {
+
+                @media (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi) {
+                    poster: url("../img/section6/img-3@2x.jpg");
+                }
+            }
+        }
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .section6 {
+        background-image: url('../src/img/section6/background.jpg');
+    }
+}
