@@ -1,10 +1,11 @@
 // ретинізовані зображення
 
 .section6 {
-    background-image: url('../img/section6/background.jpg');
+    background-image: url('.img/section6/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: black;
 
     .section6__video {
         &.poster-img-1 {
@@ -42,6 +43,8 @@
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .section6 {
-        background-image: url('../src/img/section6/background.jpg');
+        background-image: url('../img/section6/background@2x.jpg');
     }
 }
+
+// інше
