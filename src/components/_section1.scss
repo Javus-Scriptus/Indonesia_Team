@@ -1,3 +1,7 @@
+@import url('./utils/_mixins.scss');
+@import url('./utils/_variables.scss');
+@import url('./utils/_placeholders.scss');
+
 .header {
   justify-content: space-between;
 
