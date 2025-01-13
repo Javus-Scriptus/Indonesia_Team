@@ -22,6 +22,9 @@ a {
 ul {
     list-style: none;
 }
+li{
+    cursor: pointer;
+}
 
 .footer {
     background: black;
@@ -40,6 +43,7 @@ ul {
 .footer__info-list {
     display: flex;
     gap: 38px;
+    margin-left: 30px;
 }
 
 .footer__media-list {
@@ -54,7 +58,6 @@ ul {
 
 .footer__info{
     margin-right: auto;
-    // margin-left: 100px;
 }
 
 
@@ -63,6 +66,21 @@ ul {
     height: 24px;
     flex-shrink: 0;
     fill: #FFF;
+    // margin-right: 50px;
+}
+
+.footer-icon:hover{animation:jello-horizontal .9s both}
+
+@keyframes footer-icon{0%{transform:scale3d(1,1,1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}100%{transform:scale3d(1,1,1)}}
+
+.footer-icon:hover{
+    margin: 01 12px 12px 0;
+    text-align: center;
+    line-height: 42px;
+    border-radius: 50%;
+    background-color: #DD2242;
+    fill: black;
+    transition: .35s;
 }
 
 .icon {
@@ -79,9 +97,14 @@ ul {
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
-    /* 155.556% */
     letter-spacing: 0.5px;
 }
+
+
+
+.footer__info-item:hover{-webkit-animation:heartbeat 1.5s ease-in-out infinite both;animation:heartbeat 1.5s ease-in-out infinite both}
+
+@-webkit-keyframes footer__info-item{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
 
 .footer__media-text {
     color: var(--Main-White, #FFF);
