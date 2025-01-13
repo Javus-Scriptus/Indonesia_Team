@@ -1,3 +1,100 @@
 @import url('./utils/_mixins.scss');
 @import url('./utils/_variables.scss');
 @import url('./utils/_placeholders.scss');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1720px;
+    padding: auto 10;
+    margin: 0 auto;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background: black;
+    background-size: cover;
+     background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.footer__inner {
+    display: flex;
+    padding-top: 48px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__info-list {
+    display: flex;
+    gap: 38px;
+    // margin-right: 550px;
+    // margin-left: 125px;
+}
+
+.footer__media-list {
+    display: flex;
+    gap: 40px;
+    margin: auto;
+}
+
+// .footer__media{
+//     justify-content: flex-end;
+// }
+
+.footer__info{
+    margin-right: auto;
+    margin-left: 100px;
+}
+
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    fill: #FFF;
+}
+
+.icon {
+    width: 174px;
+    height: 65.749px;
+    flex-shrink: 0;
+}
+
+.footer__info-item {
+    color: var(--Main-White, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 155.556% */
+    letter-spacing: 0.5px;
+}
+
+.footer__media-text {
+    color: var(--Main-White, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 155.556% */
+    letter-spacing: 0.5px;
+}
+
+
