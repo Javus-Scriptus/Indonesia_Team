@@ -1,3 +1,10 @@
+@import url('./utils/_mixins.scss');
+@import url('./utils/_variables.scss');
+@import url('./utils/_placeholders.scss');
+@import url('./utils/_mixins.scss');
+@import url('./utils/_variables.scss');
+@import url('./utils/_placeholders.scss');
+
 body{
     margin: 0;
     background-color: #0d1b2a;
@@ -25,8 +32,8 @@ body{
     width: 100%;
 }
 
-
 body{
     background-image: Rectangle 13;
     background-image: Rectangle 11;
 }
+
