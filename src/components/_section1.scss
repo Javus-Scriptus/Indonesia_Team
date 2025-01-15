@@ -81,8 +81,27 @@
   }
 }
 
-// explore cards
+// calendar
+.calendar {
+  .active-stripe {
+    fill: #dd2242;
+  }
 
+  .inactive-stripe {
+    fill: #fff;
+  }
+
+  &__num {
+    // @extend %regular-text !optional;
+    color: #fff;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+// explore cards
 .explore-cards {
   // @extend %regular-centering;
   width: 100%;
@@ -138,9 +157,9 @@
 
   &__text {
     // @extend %regular-text;
-    // width: 50%;
+    width: 70%;
     color: #939393;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
     // font-feature-settings: 'liga' off, 'clig' off;
   }
 }
