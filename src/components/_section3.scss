@@ -1,0 +1,93 @@
+@import url('./utils/_mixins.scss');
+@import url('./utils/_variables.scss');
+@import url('./utils/_placeholders.scss');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    padding: auto 10px;
+    margin: 0 auto;
+}
+
+.section-3 {
+    background: url(../img/section3/section-3-bg.png);
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+
+
+.section-3__title {
+    color: var(--Blue---Background, #010A20);
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 75px */
+    padding-top: 127px;
+    padding-bottom: 45px;
+}
+
+.section-3__slider-img {
+    width: 405px;
+    height: 257px;
+    border-radius: 10px;
+
+}
+
+.section-3__slider{
+    padding-bottom: 940px;
+    text-align: center;
+    gap: 30px;
+}
+
+.section-3__slider-arrow{
+    cursor: pointer;
+    position:absolute;
+    top: 10%;
+    z-index: 5;
+}
+
+.slider__arrow-left{
+    left: -80px;
+
+}
+
+.slider__arrow-right{
+    right: 10px;
+}
+
+.slick-dots{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 28px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.slick-dots button{
+    width: 16px;
+    height: 16px;
+    font-size: 0;
+    padding: 0;
+    border-radius: 50%;
+    border: 0;
+    background-color: #85A3B2;
+}
+
+.slick-active button{
+    background: #DD2242;
+    width: 50px;
+    height: 19px;
+    transition: .40s;
+    border-radius: 20px;
+    border: 1px solid #010A20;
+}
