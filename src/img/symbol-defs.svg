@@ -35,10 +35,10 @@
 <symbol id="magnifying__glass" viewBox="0 0 33 32">
 <path d="M20.381 18h-0.79l-0.28-0.27c0.98-1.14 1.57-2.62 1.57-4.23 0-3.59-2.91-6.5-6.5-6.5s-6.5 2.91-6.5 6.5c0 3.59 2.91 6.5 6.5 6.5 1.61 0 3.090-0.59 4.23-1.57l0.27 0.28v0.79l5 4.99 1.49-1.49-4.99-5zM14.38 18c-2.49 0-4.5-2.010-4.5-4.5s2.010-4.5 4.5-4.5c2.49 0 4.5 2.010 4.5 4.5s-2.010 4.5-4.5 4.5z"></path>
 </symbol>
-<symbol id="section-1__active__stripe" viewBox="0 0 4 32">
+<symbol id="active__stripe" viewBox="0 0 4 32">
 <path fill="#dd2242" style="fill: var(--color1, #dd2242)" d="M1.196 29.63h1.186v-29.63h-1.186v29.63z"></path>
 </symbol>
-<symbol id="section-1__inactive__stripe" viewBox="0 0 0 32">
+<symbol id="inactive__stripe" viewBox="0 0 0 32">
 <path fill="#fff" style="fill: var(--color2, #fff)" d="M0.004 32h0.216v-32h-0.216v32z"></path>
 </symbol>
 <symbol id="section-8_stripe" viewBox="0 0 0 32">
