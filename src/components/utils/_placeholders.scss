@@ -1,0 +1,23 @@
+%regular-text {
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+  font-weight: 400;
+  font-family: 'DM Sans';
+  text-align: start;
+  font-style: normal;
+}
+
+%regular-centering {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%bg-styles {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
