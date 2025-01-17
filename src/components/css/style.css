@@ -1,4 +1,4 @@
-*,
+/* *,
 *::after,
 *::before {
     box-sizing: border-box;
@@ -10,12 +10,12 @@
     margin: 0 auto;
 }
 
-.section-3 {
-    background: url(../img/section3/section-3-bg.png);
+/* .section-3 {
+    background: url();
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-}
+} */
 
 
 .section-3__title {
@@ -86,3 +86,7 @@
     border-radius: 20px;
     border: 1px solid #010A20;
 }
+
+.slick-slide img{
+    display: flex;
+} 
