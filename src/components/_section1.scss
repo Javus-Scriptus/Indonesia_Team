@@ -22,10 +22,14 @@
     gap: 20px;
 
     &__icon {
-      width: 50px;
-      height: 50px;
+      width: 2.1vw;
+      height: 2.1vw;
       fill: #fff;
       cursor: pointer;
+
+      &:hover {
+        fill: #2196f3;
+      }
     }
   }
 
@@ -41,6 +45,10 @@
     font-weight: 700;
     text-transform: uppercase;
     height: 3px;
+
+    &:hover {
+      color: #2196f3;
+    }
   }
 
   &__icon {
@@ -58,7 +66,7 @@
   background-position: center center;
 
   &__heading {
-    margin-top: 30vh;
+    // margin-top: 30vh;
     width: 32.8px;
     color: #fff;
     font-family: 'Roboto', sans-serif;
@@ -81,14 +89,30 @@
   }
 }
 
+.side-bar {
+  // width: 185px;
+  width: 9.9%;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  position: absolute;
+  top: 20vh;
+}
+
 // calendar
 .calendar {
+  outline: 2px solid blue;
+
   .active-stripe {
     fill: #dd2242;
+    width: 4.002px;
+    height: 100px;
   }
 
   .inactive-stripe {
     fill: #fff;
+    width: 2.001px;
+    height: 296px;
   }
 
   &__num {
@@ -98,6 +122,24 @@
     font-family: 'DM Sans';
     font-size: 16px;
     font-weight: 700;
+    width: 18px;
+  }
+}
+
+.social-media {
+  display: flex;
+  gap: 12px;
+
+  &__icon {
+    fill: #fff;
+    width: 25px;
+    height: 25px;
+    outline: 2px solid red;
+    cursor: pointer;
+
+    &:hover {
+      fill: #2196f3;
+    }
   }
 }
 
