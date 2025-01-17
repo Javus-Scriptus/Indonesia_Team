@@ -44,7 +44,7 @@
     gap: 30px;
 }
 
-.section-3__slider-arrow{
+/* .section-3__slider-arrow{
     cursor: pointer;
     position:absolute;
     top: 10%;
@@ -57,7 +57,7 @@
 
 .slider__arrow-right{
     right: 10px;
-}
+} */
 
 .slick-dots{
     list-style-type: none;

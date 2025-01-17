@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-.container {
+.container__section3 {
     max-width: 1440px;
     padding: auto 10px;
     margin: 0 auto;
@@ -94,4 +94,16 @@
 
 .slick-slide img{
     display: inline;
+}
+
+.slick-arrow{  width: 10px;
+    height: 10px;
+    // cursor: pointer;
+    // position:absolute;
+    // top: 10%;
+    // z-index: 5;
+}
+
+.slick-next{
+    right: 10px;   
 }
