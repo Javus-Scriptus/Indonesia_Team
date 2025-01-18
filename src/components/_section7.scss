@@ -3,9 +3,35 @@
 @import url('./utils/_placeholders.scss');
 
 .section-7 {
+  .h3-section-7 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; 
+    margin-left: 40.5%;
+  }
+  .p-section-7 {  
+    color: #6F7787;
+    width: 500px;
+    margin-left: 39%;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: 0.18px;
+  }
   .photo-gallery {
-    display: grid;
-    gap: 10px; 
+    display: inline-grid; 
     grid-template-columns: repeat(3, 1fr);
+    margin-left: 20%;
+    .photo-5 {
+      margin-top:-320px ;
+    }
+    .photo-6 {
+      margin-top:-150px ;
+    }
+    .photo {
+      clip-path: inset(10px 10px 10px 10px round 20px);
+    }
    }
   }
