@@ -44,21 +44,6 @@
     gap: 30px;
 }
 
-/* .section-3__slider-arrow{
-    cursor: pointer;
-    position:absolute;
-    top: 10%;
-    z-index: 5;
-}
-
-.slider__arrow-left{
-    left: -80px;
-}
-
-.slider__arrow-right{
-    right: 10px;
-} */
-
 .slick-dots{
     list-style-type: none;
     display: flex;
@@ -90,3 +75,18 @@
 .slick-slide img{
     display: flex;
 } 
+
+ .section3-slider__arrow{
+    cursor: pointer;
+    position: absolute;
+    z-index: 5; 
+    bottom: -100px;
+}
+
+ /* .slider__arrow-left{
+    left: 29%;
+}
+
+.slider__arrow-right{
+    right: 31%;
+}  */
