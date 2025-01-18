@@ -43,6 +43,7 @@
     text-align: center;
     gap: 30px;
     transition: .35s;
+    cursor: grab;
 }
 
 .slick-dots{
@@ -82,7 +83,7 @@
     cursor: pointer;
     position: absolute;
     z-index: 5; 
-    top: 138%;
+    top: 105vw;
 }
 
   .slider__arrow-left{
