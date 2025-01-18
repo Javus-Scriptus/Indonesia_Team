@@ -42,6 +42,7 @@
     padding-bottom: 940px;
     text-align: center;
     gap: 30px;
+    transition: .35s;
 }
 
 .slick-dots{
@@ -74,19 +75,21 @@
 
 .slick-slide img{
     display: flex;
+    margin: 0 auto;
 } 
 
  .section3-slider__arrow{
     cursor: pointer;
     position: absolute;
     z-index: 5; 
-    bottom: -100px;
+    top: 138%;
 }
 
- /* .slider__arrow-left{
-    left: 29%;
-}
+  .slider__arrow-left{
+    left: 20%;
+} 
 
 .slider__arrow-right{
-    right: 31%;
-}  */
+    right: 22%;
+}  
+
