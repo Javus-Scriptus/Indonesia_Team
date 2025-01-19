@@ -38,6 +38,10 @@
     gap: 62px;
   }
 
+  &__breadcrumb {
+    height: 2px;
+  }
+
   &__link {
     color: #fff;
     font-family: 'DM Sans';
@@ -65,9 +69,14 @@
   background-size: cover;
   background-position: center center;
 
+  .container {
+    margin: 0;
+    margin-left: auto;
+  }
+
   &__heading {
     // margin-top: 30vh;
-    width: 32.8px;
+    width: 33vw;
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 120px;
@@ -91,7 +100,7 @@
 
 .side-bar {
   // width: 185px;
-  width: 9.9%;
+  width: 9.3%;
   display: flex;
   flex-direction: column;
   gap: 200px;
@@ -127,13 +136,16 @@
 }
 
 .social-media {
+  // width: 4%;
   display: flex;
   gap: 12px;
+  position: relative;
+  top: 90vh;
 
   &__icon {
     fill: #fff;
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     outline: 2px solid red;
     cursor: pointer;
 
@@ -163,7 +175,7 @@
   outline: 2px solid red;
 
   &__container {
-    margin-left: auto;
+    margin-left: auto !important;
     // margin-right: auto;
     width: 90vw;
     outline: 2px solid red;
