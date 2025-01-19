@@ -38,8 +38,11 @@
     gap: 62px;
   }
 
+  &__breadcrumb {
+    height: 2px;
+  }
+
   &__link {
-    height: 2px !important;
     color: #fff;
     font-family: 'DM Sans';
     font-size: 18px;
@@ -133,15 +136,16 @@
 }
 
 .social-media {
-  width: 1%;
+  // width: 4%;
   display: flex;
   gap: 12px;
-  // margin-top: 110vh;
+  position: relative;
+  top: 90vh;
 
   &__icon {
     fill: #fff;
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     outline: 2px solid red;
     cursor: pointer;
 
