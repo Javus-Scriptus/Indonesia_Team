@@ -29,6 +29,8 @@
 
       &:hover {
         fill: #2196f3;
+        transition: 0.3s ease-in-out;
+        transform: perspective(300);
       }
     }
   }
@@ -49,9 +51,13 @@
     font-weight: 700;
     text-transform: uppercase;
     height: 3px;
+    transition: 0.3s ease-in-out;
 
     &:hover {
-      color: #2196f3;
+      // color: #2196f3;
+      color: #7F0000;
+      transform: perspective(300);
+      // animation: shadow-drop-center 0.4s linear;
     }
   }
 
@@ -140,7 +146,7 @@
   display: flex;
   gap: 12px;
   position: relative;
-  top: 90vh;
+  top: 85vh;
 
   &__icon {
     fill: #fff;
@@ -215,5 +221,26 @@
     color: #939393;
     letter-spacing: 0.3px;
     // font-feature-settings: 'liga' off, 'clig' off;
+  }
+}
+
+@-webkit-keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
   }
 }
