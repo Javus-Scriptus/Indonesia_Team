@@ -26,10 +26,10 @@
       height: 2.1vw;
       fill: #fff;
       cursor: pointer;
+      transition: 0.3s ease;
 
       &:hover {
-        fill: #2196f3;
-        transition: 0.3s ease-in-out;
+        fill: #2bff01;
         transform: perspective(300);
       }
     }
@@ -55,7 +55,7 @@
 
     &:hover {
       // color: #2196f3;
-      color: #7F0000;
+      color: #7f0000;
       transform: perspective(300);
       // animation: shadow-drop-center 0.4s linear;
     }
@@ -91,6 +91,7 @@
     text-transform: uppercase;
   }
 
+  //TODO btn
   &__btn {
     // @extend %regular-text !optional;
     color: rgba(255, 255, 255, 0.8);
@@ -101,6 +102,10 @@
     padding: 20px 50px;
     border: none;
     border-radius: 50px;
+
+    &:hover {
+      animation: slide-fwd-center all 0.3s ease;
+    }
   }
 }
 
@@ -154,9 +159,12 @@
     height: 40px;
     outline: 2px solid red;
     cursor: pointer;
+    transition: 0.3s ease;
 
     &:hover {
-      fill: #2196f3;
+      fill: #2bff01;
+      // fill: #9acd32;
+      transform: perspective(300);
     }
   }
 }
@@ -224,23 +232,23 @@
   }
 }
 
-@-webkit-keyframes shadow-drop-center {
+@-webkit-keyframes slide-fwd-center {
   0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   }
   100% {
-    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    -webkit-transform: translateZ(160px);
+    transform: translateZ(160px);
   }
 }
-@keyframes shadow-drop-center {
+@keyframes slide-fwd-center {
   0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   }
   100% {
-    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    -webkit-transform: translateZ(160px);
+    transform: translateZ(160px);
   }
 }
