@@ -36,8 +36,23 @@ body {
 }
 
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  width: 90vw;
+  width: 87vw;
   outline: 2px solid red;
+  position: relative;
+  overflow: hidden !important;
+}
+
+@media screen and (mix-width: 320px) {
+  .container {
+    width: 83.7vw;
+    // text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden !important;
+  }
 }
