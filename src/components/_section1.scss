@@ -198,27 +198,123 @@
   }
 }
 //TODO mobile
-@media screen and (min-width: 320px) {
-  .container {
-    width: 83.7vw;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    padding-bottom: 70vh;
-    // width: 10vw;
-    // text-align: center;
+// @media screen and (min-width: 320px) {
+//   .container {
+//     width: 83.7vw;
+//     margin-left: auto;
+//     margin-right: auto;
+//     overflow: hidden;
+//     padding-bottom: 70vh;
+//     // width: 10vw;
+//     // text-align: center;
+//   }
+
+//   .hero {
+//     .header {
+//       &__breadcrumb {
+//         display: none;
+//       }
+//       &__icon {
+//         width: 40vw;
+//         height: 5vh;
+//         // height: 10vh;
+//       }
+//     }
+
+//     .social-media {
+//       display: none;
+//     }
+
+//     .hero {
+//       &__btn {
+//         font-size: 18px;
+//         width: 100%;
+//       }
+//       &__heading {
+//         line-height: 125%;
+//         width: 100%;
+//         font-size: 16vw;
+//       }
+//     }
+
+//     .explore-cards {
+//       height: 64vh;
+//       margin: 0;
+//       flex-direction: column;
+//     }
+//     .explore {
+//       width: 68%;
+//       flex-direction: column;
+
+//       &__heading {
+//         width: 57.6%;
+//         font-size: 26.409px;
+//       }
+//       &__text {
+//         width: 100%;
+//         font-size: 16px;
+//       }
+//       &__poster {
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
+//TODO tablet
+@media screen and (min-width: 768px) {
+}
+//TODO desktop
+@media screen and (min-width: 1024px) {
+  .header {
+    width: 95vw;
+    padding-top: 2vw;
+
+    &__logo {
+      height: 40px;
+      width: 40px;
+    }
+
+    .search {
+      margin-right: 5vw;
+      gap: 20px;
+
+      &__icon {
+        width: 2.1vw;
+        height: 2.1vw;
+      }
+    }
+
+    &__nav {
+      gap: 62px;
+    }
+
+    &__breadcrumb {
+      height: 2px;
+    }
+
+    &__link {
+      font-size: 18px;
+      height: 3px;
+    }
+
+    &__icon {
+      width: 185.096px;
+      height: 68.749px;
+      // width: 70%;
+    }
   }
 
   .hero {
-    .header {
-      &__breadcrumb {
-        display: none;
-      }
-      &__icon {
-        width: 40vw;
-        height: 5vh;
-        // height: 10vh;
-      }
+    background: url(../img/section1/desert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    &__heading {
+      // margin-top: 30vh;
+      width: 33vw;
+      font-size: 120px;
+      line-height: 130px;
     }
 
     .social-media {
@@ -259,146 +355,84 @@
       }
     }
   }
-  //TODO tablet
-  @media screen and (min-width: 768px) {
+
+  .side-bar {
+    // width: 185px;
+    width: 9.3%;
+    gap: 200px;
+    top: 20vh;
   }
-  //TODO desktop
-  @media screen and (min-width: 1024px) {
-    .header {
-      width: 95vw;
-      padding-top: 2vw;
 
-      &__logo {
-        height: 40px;
-        width: 40px;
-      }
-
-      .search {
-        margin-right: 5vw;
-        gap: 20px;
-
-        &__icon {
-          width: 2.1vw;
-          height: 2.1vw;
-        }
-      }
-
-      &__nav {
-        gap: 62px;
-      }
-
-      &__breadcrumb {
-        height: 2px;
-      }
-
-      &__link {
-        font-size: 18px;
-        height: 3px;
-      }
-
-      &__icon {
-        width: 185.096px;
-        height: 68.749px;
-        // width: 70%;
-      }
+  // calendar
+  .calendar {
+    .active-stripe {
+      width: 4.002px;
+      height: 100px;
     }
 
-    .hero {
-      background: url(../img/section1/desert.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-
-      &__heading {
-        // margin-top: 30vh;
-        width: 33vw;
-        font-size: 120px;
-        line-height: 130px;
-      }
-
-      &__btn {
-        font-size: 20px;
-        padding: 20px 50px;
-      }
+    .inactive-stripe {
+      width: 2.001px;
+      height: 296px;
     }
 
-    .side-bar {
-      // width: 185px;
-      width: 9.3%;
-      gap: 200px;
-      top: 20vh;
+    &__num {
+      font-size: 16px;
+      width: 18px;
+    }
+  }
+
+  .social-media {
+    // width: 4%;
+    gap: 12px;
+    top: 85vh;
+
+    &__icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  // explore cards
+  .explore-cards {
+    width: 100%;
+    height: 25vh;
+    gap: 14px;
+    margin-top: 35vh;
+    // display: flex;
+    flex-direction: row;
+  }
+
+  .explore {
+    height: 70%;
+    width: 15%;
+    // display: flex;
+    flex-direction: row;
+
+    &__container {
+      width: 90vw;
     }
 
-    // calendar
-    .calendar {
-      .active-stripe {
-        width: 4.002px;
-        height: 100px;
-      }
-
-      .inactive-stripe {
-        width: 2.001px;
-        height: 296px;
-      }
-
-      &__num {
-        font-size: 16px;
-        width: 18px;
-      }
+    &__poster {
+      height: 110%;
+      width: 22%;
     }
 
-    .social-media {
-      // width: 4%;
-      gap: 12px;
-      top: 85vh;
-
-      &__icon {
-        width: 40px;
-        height: 40px;
-      }
-    }
-
-    // explore cards
-    .explore-cards {
+    &__video {
       width: 100%;
-      height: 25vh;
-      gap: 14px;
-      // display: flex;
-      flex-direction: row;
+      height: 100%;
     }
 
-    .explore {
-      height: 70%;
-      width: 15%;
-      // display: flex;
-      flex-direction: row;
+    &__num {
+      font-size: 16px;
+    }
 
-      &__container {
-        width: 90vw;
-      }
+    &__heading {
+      font-size: 26.409px;
+    }
 
-      &__poster {
-        height: 110%;
-        width: 22%;
-      }
-
-      &__video {
-        width: 100%;
-        height: 100%;
-      }
-
-      &__num {
-        font-size: 16px;
-      }
-
-      &__heading {
-        font-size: 26.409px;
-      }
-
-      &__text {
-        width: 70%;
-        letter-spacing: 0.3px;
-      }
+    &__text {
+      width: 70%;
+      letter-spacing: 0.3px;
     }
   }
 }
