@@ -1,24 +1,12 @@
-@import url('./utils/_mixins.scss');
-@import url('./utils/_variables.scss');
-@import url('./utils/_placeholders.scss');
-@import url('./utils/_mixins.scss');
-@import url('./utils/_variables.scss');
-@import url('./utils/_placeholders.scss');
-
-body{
-    margin: 0;
-    background-color: #0d1b2a;
-    color: #ffffff;
-}
-
 .container{
+    display:flex;
+    gap:20px;
+    padding:40px;
     display: flex;
     gap: 20px;
     padding: 40px;
     justify-content: center;
 }
-
-
 .section-2{
     background-color: #1b263b;
     max-width: 400px;
@@ -26,14 +14,7 @@ body{
     border: radius 10px; 
 }
 
-
 .section-2 img{
     height: auto;
     width: 100%;
 }
-
-body{
-    background-image: Rectangle 13;
-    background-image: Rectangle 11;
-}
-

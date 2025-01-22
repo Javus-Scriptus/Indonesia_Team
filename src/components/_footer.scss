@@ -130,6 +130,28 @@ li{
 
 
 
+
+
+.footer__img{
+    position: relative;
+    top: -7vh;
+    right: 10vh;
+}
+
+@media(max-width:1438px){
+    .footer__img{
+        position: absolute;
+        top: 609vh;
+        right: 10vh;
+    }
+}
+
+@media(max-width:1400px){
+    .footer__img{
+        display: none;
+    }
+}
+
 @media (max-width:1200px){
     .container__footer{
         flex-direction: column;
@@ -156,10 +178,11 @@ li{
     .footer__media-list:nth-child(1){
         margin-left: 100px;
     }
+    .footer__img{
+        display: none;
+    }
 }
 
-.footer__img{
-    position: absolute;
-    bottom: -466vh;
-    right: 10vh;
-}
+
+
+

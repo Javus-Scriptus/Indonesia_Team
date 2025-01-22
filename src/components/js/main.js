@@ -7,6 +7,17 @@ $(function(){
         slidesToScroll: 3, 
         dots: true,
         responsive: [
+          {
+            breakpoint: 2100,
+            settings:{
+              prevArrow:  '<img class="section3-slider__arrow slider__arrow-left" src="" alt="">',
+              nextArrow: '<img class="section3-slider__arrow slider__arrow-left" src="" alt="">' ,
+              infinite: true,
+              dots: true,
+              prevArrow: false,
+              nextArrow: false,
+            }
+          },
             {
               breakpoint: 1200,
               settings: {
@@ -19,6 +30,7 @@ $(function(){
                 prevArrow: false,
                 nextArrow: false,
               }
+              
             },
             {
               breakpoint: 820,
@@ -35,7 +47,8 @@ $(function(){
               breakpoint: 480,
               settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                dots: false
               }
             }
           ]
