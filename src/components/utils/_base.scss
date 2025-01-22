@@ -1,0 +1,11 @@
+// .container {
+//   @extend %regular-text;
+// }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none !important;
+}

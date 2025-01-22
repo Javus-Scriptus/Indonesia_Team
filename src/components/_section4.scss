@@ -1,0 +1,53 @@
+@import url('./utils/_mixins.scss');
+@import url('./utils/_variables.scss');
+@import url('./utils/_placeholders.scss');
+
+   .section {
+     padding: 50px 20px;
+     background-image: url('background.jpg');
+     background-size: cover;
+     background-position: center;
+   }
+   
+   .section h2 {
+     font-size: 2rem;
+     margin-bottom: 10px;
+   }
+   
+   .section p {
+     max-width: 600px;
+     margin: 0 auto 40px auto;
+     font-size: 1rem;
+     line-height: 1.5;
+   }
+   
+   .stats {
+     display: flex;
+     justify-content: center;
+     gap: 40px;
+   }
+   
+   .stat-item {
+     text-align: center;
+   }
+   
+   .stat-item h3 {
+     font-size: 2.5rem;
+     color: #ff4c4c;
+     margin: 0 0 10px 0;
+   }
+   
+   .stat-item p {
+     margin: 0;
+     font-size: 1rem;
+     color: #cccccc;
+   }
+   
+   @media (max-width: 768px) {
+     .stats {
+       flex-direction: column;
+       gap: 20px;
+     }
+   }
+
+
