@@ -2,23 +2,30 @@
 @import url('./utils/_variables.scss');
 @import url('./utils/_placeholders.scss');
 
-   .section {
-     padding: 50px 20px;
-     background-image: url('background.jpg');
+   .section-4 {
+     padding: 201px 20px;
      background-size: cover;
      background-position: center;
+     background: #020C21;
+     opacity: 0.8;
+     position: relative;
+     top: -25vh;
    }
    
-   .section h2 {
-     font-size: 2rem;
-     margin-bottom: 10px;
-   }
-   
-   .section p {
-     max-width: 600px;
+   .section-4 h2 {
+    max-width: 484px;
      margin: 0 auto 40px auto;
-     font-size: 1rem;
+     font-size: 4rem;
      line-height: 1.5;
+     color:white;
+   }
+   
+   .section-4 p {
+     max-width: 484px;
+     margin: 0 auto 40px auto;
+     font-size: 0,5rem;
+     line-height: 1.5;
+     color:#cccccc;
    }
    
    .stats {
@@ -49,5 +56,3 @@
        gap: 20px;
      }
    }
-
-
