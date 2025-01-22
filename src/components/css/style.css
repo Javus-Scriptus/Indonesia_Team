@@ -83,7 +83,7 @@
     cursor: pointer;
     position: absolute;
     z-index: 5; 
-    top: 105vw;
+    top: 71vw;
 }
 
   .slider__arrow-left{
@@ -91,6 +91,29 @@
 } 
 
 .slider__arrow-right{
-    right: 22%;
+    right: 21%;
 }  
 
+@media(max-width: 1200px){
+
+    .slick-dots button{
+        width: 16px;
+        height: 16px;
+        font-size: 0;
+        padding: 0;
+        border-radius: 50%;
+        border: 0;
+        background-color: #fff;
+    }
+    
+    .slick-active button{
+        background: #DD2242;
+        width: 50px;
+        height: 19px;
+        transition: .40s;
+        border-radius: 20px;
+        border: 1px solid #010A20;
+    }
+    
+    
+}

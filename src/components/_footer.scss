@@ -156,10 +156,31 @@ li{
     .footer__media-list:nth-child(1){
         margin-left: 100px;
     }
+    .footer__img{
+        position: absolute;
+        top: 609vh;
+        right: 10vh;
+    }
 }
 
 .footer__img{
     position: absolute;
-    bottom: -466vh;
+    top: 521vh;
     right: 10vh;
 }
+
+@media(max-width:1438px){
+    .footer__img{
+        position: absolute;
+        top: 609vh;
+        right: 10vh;
+    }
+}
+
+@media(max-width:1400px){
+    .footer__img{
+        display: none;
+    }
+}
+
+

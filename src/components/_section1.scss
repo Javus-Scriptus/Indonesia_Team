@@ -5,59 +5,70 @@
 
 .header {
   display: flex;
-  width: 95vw;
-  outline: 2px solid red;
+  outline: 2px solid rgb(17, 125, 17);
   margin-left: auto;
   margin-right: auto;
   align-items: center;
   // justify-content: space-between;
-  padding-top: 2vw;
   align-items: start;
   justify-content: start;
 
   .search {
     display: flex;
     margin-left: auto;
-    margin-right: 5vw;
-    gap: 20px;
 
     &__icon {
-      width: 2.1vw;
-      height: 2.1vw;
       fill: #fff;
       cursor: pointer;
+      transition: 0.3s ease;
 
       &:hover {
-        fill: #2196f3;
+        fill: #2bff01;
+        transform: perspective(300);
       }
     }
   }
 
   &__nav {
     display: flex;
-    gap: 62px;
+  }
+
+  &__breadcrumb {
+    height: 2px;
   }
 
   &__link {
     color: #fff;
     font-family: 'DM Sans';
-    font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
-    height: 3px;
+    transition: 0.3s ease-in-out;
 
     &:hover {
-      color: #2196f3;
+      // color: #2196f3;
+      color: #7f0000;
+      transform: perspective(300);
+      // animation: shadow-drop-center 0.4s linear;
     }
   }
 
   &__icon {
     fill: #fff;
-    width: 185.096px;
-    height: 68.749px;
     // width: 70%;
   }
 }
+
+.search {
+  &__icon {
+    height: 7.4vw;
+    width: 7.4vw;
+  }
+}
+
+// .container {
+//   margin: 0;
+//   margin-left: auto;
+// }
 
 .hero {
   background: url(../img/section1/desert.jpg);
@@ -67,36 +78,33 @@
 
   &__heading {
     // margin-top: 30vh;
-    width: 32.8px;
     color: #fff;
     font-family: 'Roboto', sans-serif;
-    font-size: 120px;
     font-weight: 900;
-    line-height: 130px;
     text-transform: uppercase;
   }
 
+  //TODO btn
   &__btn {
     // @extend %regular-text !optional;
     color: rgba(255, 255, 255, 0.8);
     background: #dd2242;
     text-align: center;
-    font-size: 20px;
     font-weight: 700;
-    padding: 20px 50px;
     border: none;
     border-radius: 50px;
+
+    &:hover {
+      animation: slide-fwd-center all 0.3s ease;
+    }
   }
 }
 
 .side-bar {
   // width: 185px;
-  width: 9.9%;
   display: flex;
   flex-direction: column;
-  gap: 200px;
   // position: absolute;
-  top: 20vh;
 }
 
 // calendar
@@ -105,14 +113,10 @@
 
   .active-stripe {
     fill: #dd2242;
-    width: 4.002px;
-    height: 100px;
   }
 
   .inactive-stripe {
     fill: #fff;
-    width: 2.001px;
-    height: 296px;
   }
 
   &__num {
@@ -120,25 +124,25 @@
     color: #fff;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
     font-family: 'DM Sans';
-    font-size: 16px;
     font-weight: 700;
-    width: 18px;
   }
 }
 
 .social-media {
+  // width: 4%;
   display: flex;
-  gap: 12px;
+  position: relative;
 
   &__icon {
     fill: #fff;
-    width: 25px;
-    height: 25px;
     outline: 2px solid red;
     cursor: pointer;
+    transition: 0.3s ease;
 
     &:hover {
-      fill: #2196f3;
+      fill: #2bff01;
+      // fill: #9acd32;
+      transform: perspective(300);
     }
   }
 }
@@ -146,32 +150,23 @@
 // explore cards
 .explore-cards {
   // @extend %regular-centering;
-  width: 100%;
-  height: 25vh;
   display: flex;
   background: rgba(0, 0, 0, 0.65);
-  gap: 14px;
   justify-content: space-around;
-  margin-top: 241px;
   // overflow-x: auto;
 }
 
 .explore {
   margin: auto;
-  height: 70%;
-  width: 15%;
   outline: 2px solid red;
 
   &__container {
-    margin-left: auto;
+    margin-left: auto !important;
     // margin-right: auto;
-    width: 90vw;
     outline: 2px solid red;
   }
 
   &__poster {
-    height: 110%;
-    width: 22%;
     margin-right: 0;
     // margin-bottom: 30px;
   }
@@ -185,7 +180,6 @@
     // @extend %regular-text;
     color: #dd2242;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
     font-weight: 900;
     text-transform: uppercase;
   }
@@ -193,15 +187,218 @@
   &__heading {
     // @extend %regular-text !optional;
     color: #fff;
-    font-size: 26.409px;
     font-weight: 700;
   }
 
   &__text {
     // @extend %regular-text;
-    width: 70%;
     color: #939393;
     letter-spacing: 0.3px;
     // font-feature-settings: 'liga' off, 'clig' off;
+  }
+}
+//TODO mobile
+@media screen and (min-width: 320px) {
+  .container {
+    width: 83.7vw;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding-bottom: 70vh;
+    // width: 10vw;
+    // text-align: center;
+  }
+
+  .hero {
+    .header {
+      &__breadcrumb {
+        display: none;
+      }
+      &__icon {
+        width: 40vw;
+        height: 5vh;
+        // height: 10vh;
+      }
+    }
+
+    .social-media {
+      display: none;
+    }
+
+    .hero {
+      &__btn {
+        font-size: 18px;
+        width: 100%;
+      }
+      &__heading {
+        line-height: 125%;
+        width: 100%;
+        font-size: 16vw;
+      }
+    }
+
+    .explore-cards {
+      height: 64vh;
+      margin: 0;
+      flex-direction: column;
+    }
+    .explore {
+      width: 68%;
+      flex-direction: column;
+      &__heading {
+        width: 57.6%;
+        font-size: 26.409px;
+      }
+      &__text {
+        width: 100%;
+        font-size: 16px;
+      }
+
+      &__poster {
+        width: 100%;
+      }
+    }
+  }
+  //TODO tablet
+  @media screen and (min-width: 768px) {
+  }
+  //TODO desktop
+  @media screen and (min-width: 1024px) {
+    .header {
+      width: 95vw;
+      padding-top: 2vw;
+
+      &__logo {
+        height: 40px;
+        width: 40px;
+      }
+
+      .search {
+        margin-right: 5vw;
+        gap: 20px;
+
+        &__icon {
+          width: 2.1vw;
+          height: 2.1vw;
+        }
+      }
+
+      &__nav {
+        gap: 62px;
+      }
+
+      &__breadcrumb {
+        height: 2px;
+      }
+
+      &__link {
+        font-size: 18px;
+        height: 3px;
+      }
+
+      &__icon {
+        width: 185.096px;
+        height: 68.749px;
+        // width: 70%;
+      }
+    }
+
+    .hero {
+      background: url(../img/section1/desert.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+
+      &__heading {
+        // margin-top: 30vh;
+        width: 33vw;
+        font-size: 120px;
+        line-height: 130px;
+      }
+
+      &__btn {
+        font-size: 20px;
+        padding: 20px 50px;
+      }
+    }
+
+    .side-bar {
+      // width: 185px;
+      width: 9.3%;
+      gap: 200px;
+      top: 20vh;
+    }
+
+    // calendar
+    .calendar {
+      .active-stripe {
+        width: 4.002px;
+        height: 100px;
+      }
+
+      .inactive-stripe {
+        width: 2.001px;
+        height: 296px;
+      }
+
+      &__num {
+        font-size: 16px;
+        width: 18px;
+      }
+    }
+
+    .social-media {
+      // width: 4%;
+      gap: 12px;
+      top: 85vh;
+
+      &__icon {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    // explore cards
+    .explore-cards {
+      width: 100%;
+      height: 25vh;
+      gap: 14px;
+      // display: flex;
+      flex-direction: row;
+    }
+
+    .explore {
+      height: 70%;
+      width: 15%;
+      // display: flex;
+      flex-direction: row;
+
+      &__container {
+        width: 90vw;
+      }
+
+      &__poster {
+        height: 110%;
+        width: 22%;
+      }
+
+      &__video {
+        width: 100%;
+        height: 100%;
+      }
+
+      &__num {
+        font-size: 16px;
+      }
+
+      &__heading {
+        font-size: 26.409px;
+      }
+
+      &__text {
+        width: 70%;
+        letter-spacing: 0.3px;
+      }
+    }
   }
 }
