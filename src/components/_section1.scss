@@ -12,6 +12,7 @@
   // justify-content: space-between;
   align-items: start;
   justify-content: start;
+  align-items: center;
 
   .search {
     display: flex;
@@ -84,7 +85,6 @@
     text-transform: uppercase;
   }
 
-  //TODO btn
   &__btn {
     // @extend %regular-text !optional;
     color: rgba(255, 255, 255, 0.8);
@@ -103,7 +103,7 @@
 .side-bar {
   // width: 185px;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   // position: absolute;
 }
 
@@ -157,11 +157,14 @@
 }
 
 .explore {
-  margin: auto;
+  display: flex;
+  // margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   outline: 2px solid red;
 
   &__container {
-    margin-left: auto !important;
+    margin-left: auto;
     // margin-right: auto;
     outline: 2px solid red;
   }
@@ -197,124 +200,28 @@
     // font-feature-settings: 'liga' off, 'clig' off;
   }
 }
-//TODO mobile
-// @media screen and (min-width: 320px) {
-//   .container {
-//     width: 83.7vw;
-//     margin-left: auto;
-//     margin-right: auto;
-//     overflow: hidden;
-//     padding-bottom: 70vh;
-//     // width: 10vw;
-//     // text-align: center;
-//   }
-
-//   .hero {
-//     .header {
-//       &__breadcrumb {
-//         display: none;
-//       }
-//       &__icon {
-//         width: 40vw;
-//         height: 5vh;
-//         // height: 10vh;
-//       }
-//     }
-
-//     .social-media {
-//       display: none;
-//     }
-
-//     .hero {
-//       &__btn {
-//         font-size: 18px;
-//         width: 100%;
-//       }
-//       &__heading {
-//         line-height: 125%;
-//         width: 100%;
-//         font-size: 16vw;
-//       }
-//     }
-
-//     .explore-cards {
-//       height: 64vh;
-//       margin: 0;
-//       flex-direction: column;
-//     }
-//     .explore {
-//       width: 68%;
-//       flex-direction: column;
-
-//       &__heading {
-//         width: 57.6%;
-//         font-size: 26.409px;
-//       }
-//       &__text {
-//         width: 100%;
-//         font-size: 16px;
-//       }
-//       &__poster {
-//         width: 100%;
-//       }
-//     }
-//   }
-// }
-//TODO tablet
-@media screen and (min-width: 768px) {
-}
-//TODO desktop
-@media screen and (min-width: 1024px) {
-  .header {
-    width: 95vw;
-    padding-top: 2vw;
-
-    &__logo {
-      height: 40px;
-      width: 40px;
-    }
-
-    .search {
-      margin-right: 5vw;
-      gap: 20px;
-
-      &__icon {
-        width: 2.1vw;
-        height: 2.1vw;
-      }
-    }
-
-    &__nav {
-      gap: 62px;
-    }
-
-    &__breadcrumb {
-      height: 2px;
-    }
-
-    &__link {
-      font-size: 18px;
-      height: 3px;
-    }
-
-    &__icon {
-      width: 185.096px;
-      height: 68.749px;
-      // width: 70%;
-    }
+// TODO mobile
+@media screen and (min-width: 320px) {
+  .container {
+    width: 83.7vw;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding-bottom: 70vh;
+    // width: 10vw;
+    // text-align: center;
   }
 
   .hero {
-    background: url(../img/section1/desert.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-
-    &__heading {
-      // margin-top: 30vh;
-      width: 33vw;
-      font-size: 120px;
-      line-height: 130px;
+    .header {
+      &__breadcrumb {
+        display: none;
+      }
+      &__icon {
+        width: 40vw;
+        height: 5vh;
+        // height: 10vh;
+      }
     }
 
     .social-media {
@@ -341,6 +248,7 @@
     .explore {
       width: 68%;
       flex-direction: column;
+
       &__heading {
         width: 57.6%;
         font-size: 26.409px;
@@ -349,90 +257,185 @@
         width: 100%;
         font-size: 16px;
       }
-
       &__poster {
         width: 100%;
       }
     }
   }
-
-  .side-bar {
-    // width: 185px;
-    width: 9.3%;
-    gap: 200px;
-    top: 20vh;
-  }
-
-  // calendar
-  .calendar {
-    .active-stripe {
-      width: 4.002px;
-      height: 100px;
+}
+//TODO tablet
+@media screen and (min-width: 768px) {
+  .header {
+    &__nav {
     }
 
-    .inactive-stripe {
-      width: 2.001px;
-      height: 296px;
+    .search {
+      &__icon {
+        width: 5.2vw;
+        height: 5.2vw;
+      }
     }
 
-    &__num {
-      font-size: 16px;
-      width: 18px;
+    &__logo {
+      width: 28vw;
     }
   }
 
-  .social-media {
-    // width: 4%;
-    gap: 12px;
-    top: 85vh;
-
-    &__icon {
-      width: 40px;
-      height: 40px;
-    }
-  }
-
-  // explore cards
-  .explore-cards {
-    width: 100%;
-    height: 25vh;
-    gap: 14px;
-    margin-top: 35vh;
-    // display: flex;
-    flex-direction: row;
-  }
-
-  .explore {
-    height: 70%;
-    width: 15%;
-    // display: flex;
-    flex-direction: row;
-
-    &__container {
-      width: 90vw;
-    }
-
-    &__poster {
-      height: 110%;
-      width: 22%;
-    }
-
-    &__video {
-      width: 100%;
-      height: 100%;
-    }
-
-    &__num {
-      font-size: 16px;
-    }
-
+  .hero {
     &__heading {
-      font-size: 26.409px;
+      width: 40%;
+      font-size: 8vw;
     }
 
-    &__text {
-      width: 70%;
-      letter-spacing: 0.3px;
+    &__btn {
+      width: 35.3vw;
+      font-size: 3vw;
+    }
+  }
+
+  .explore-cards {
+    flex-direction: column;
+  }
+
+  //TODO desktop
+  @media screen and (min-width: 1024px) {
+    .header {
+      width: 95vw;
+      padding-top: 2vw;
+
+      &__logo {
+        height: 40px;
+        width: 40px;
+      }
+
+      .search {
+        margin-right: 5vw;
+        gap: 20px;
+
+        &__icon {
+          width: 2.1vw;
+          height: 2.1vw;
+        }
+      }
+
+      &__nav {
+        gap: 62px;
+      }
+
+      &__breadcrumb {
+        height: 2px;
+      }
+
+      &__link {
+        font-size: 18px;
+        height: 3px;
+      }
+
+      &__icon {
+        width: 185.096px;
+        height: 68.749px;
+        // width: 70%;
+      }
+    }
+
+    .hero {
+      background: url(../img/section1/desert.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+
+      &__heading {
+        // margin-top: 30vh;
+        width: 33vw;
+        font-size: 120px;
+        line-height: 130px;
+      }
+
+      .hero {
+        &__btn {
+          font-size: 18px;
+          width: 14%;
+          padding: 1vw;
+          margin-left: 4vw;
+        }
+        &__heading {
+          line-height: 115%;
+          width: 40%;
+          font-size: 6vw;
+          margin-left: 4vw;
+        }
+      }
+
+      .explore-cards {
+        gap: 0;
+        height: 30vh;
+        margin-top: 20vh;
+        flex-direction: row;
+      }
+      .explore {
+        margin-top: auto;
+        margin-bottom: auto;
+        // width: 68%;
+        width: 22%;
+        flex-direction: column;
+        height: 60%;
+
+        &__heading {
+          width: 100%;
+          // font-size: 26.409px;
+          font-size: 1.5vw;
+        }
+
+        &__text {
+          width: 100%;
+          // font-size: 16px;
+          font-size: 1vw;
+        }
+
+        &__poster {
+          width: 100%;
+        }
+
+        &__container {
+          width: 90vw;
+        }
+      }
+    }
+
+    .side-bar {
+      // width: 185px;
+      width: 9.3%;
+      gap: 200px;
+      top: 20vh;
+    }
+
+    // calendar
+    .calendar {
+      .active-stripe {
+        width: 4.002px;
+        height: 100px;
+      }
+
+      .inactive-stripe {
+        width: 2.001px;
+        height: 296px;
+      }
+
+      &__num {
+        font-size: 16px;
+        width: 18px;
+      }
+    }
+
+    .social-media {
+      // width: 4%;
+      gap: 12px;
+      top: 85vh;
+
+      &__icon {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 }
