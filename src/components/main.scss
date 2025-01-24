@@ -16,7 +16,7 @@
 @import url('./_footer.scss');
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   font-family: 'Poppins';
   button {
     cursor: pointer;
@@ -43,13 +43,14 @@ body {
   width: 87vw;
   outline: 2px solid red;
   position: relative;
-  overflow: hidden !important;
+  overflow-x: hidden !important;
 }
 
   .adaptive-container {
-    width: 90vw;
+    width: 87vw;
     // text-align: center;
     margin-left: auto;
     margin-right: auto;
+    overflow-x: hidden !important;
     // overflow: hidden !important;
   }
