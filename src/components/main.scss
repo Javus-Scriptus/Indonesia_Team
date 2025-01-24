@@ -13,7 +13,6 @@
 @import url('./_section6.scss');
 @import url('./_section7.scss');
 @import url('./_section8.scss');
-@import url('./_section9.scss');
 @import url('./_footer.scss');
 
 body {
@@ -47,12 +46,10 @@ body {
   overflow: hidden !important;
 }
 
-@media screen and (mix-width: 320px) {
-  .container {
-    width: 83.7vw;
+  .adaptive-container {
+    width: 90vw;
     // text-align: center;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden !important;
+    // overflow: hidden !important;
   }
-}
