@@ -16,11 +16,10 @@
   background-repeat: no-repeat;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-    .information {
-        background-image: url('../img/section5/backrground@2x.jpg');
-    }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .information {
+    background-image: url('../img/section5/backrground@2x.jpg');
+  }
 }
 
 .information__h2 {
