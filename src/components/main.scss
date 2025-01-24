@@ -13,7 +13,6 @@
 @import url('./_section6.scss');
 @import url('./_section7.scss');
 @import url('./_section8.scss');
-@import url('./_section9.scss');
 @import url('./_footer.scss');
 
 body {
@@ -36,8 +35,21 @@ body {
 }
 
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  width: 90vw;
+  width: 87vw;
   outline: 2px solid red;
+  position: relative;
+  overflow: hidden !important;
 }
+
+  .adaptive-container {
+    width: 90vw;
+    // text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    // overflow: hidden !important;
+  }
