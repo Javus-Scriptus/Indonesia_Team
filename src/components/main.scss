@@ -13,11 +13,10 @@
 @import url('./_section6.scss');
 @import url('./_section7.scss');
 @import url('./_section8.scss');
-@import url('./_section9.scss');
 @import url('./_footer.scss');
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   font-family: 'Poppins';
   button {
     cursor: pointer;
@@ -44,15 +43,14 @@ body {
   width: 87vw;
   outline: 2px solid red;
   position: relative;
-  overflow: hidden !important;
+  overflow-x: hidden !important;
 }
 
-@media screen and (mix-width: 320px) {
-  .container {
-    width: 83.7vw;
+  .adaptive-container {
+    width: 87vw;
     // text-align: center;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden !important;
+    overflow-x: hidden !important;
+    // overflow: hidden !important;
   }
-}

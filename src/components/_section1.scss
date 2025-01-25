@@ -12,6 +12,7 @@
   // justify-content: space-between;
   align-items: start;
   justify-content: start;
+  align-items: center;
 
   .search {
     display: flex;
@@ -84,7 +85,6 @@
     text-transform: uppercase;
   }
 
-  //TODO btn
   &__btn {
     // @extend %regular-text !optional;
     color: rgba(255, 255, 255, 0.8);
@@ -103,7 +103,7 @@
 .side-bar {
   // width: 185px;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   // position: absolute;
 }
 
@@ -157,11 +157,14 @@
 }
 
 .explore {
-  margin: auto;
+  display: flex;
+  // margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   outline: 2px solid red;
 
   &__container {
-    margin-left: auto !important;
+    margin-left: auto;
     // margin-right: auto;
     outline: 2px solid red;
   }
@@ -197,10 +200,10 @@
     // font-feature-settings: 'liga' off, 'clig' off;
   }
 }
-//TODO mobile
+// TODO mobile
 @media screen and (min-width: 320px) {
   .container {
-    width: 83.7vw;
+    width: 83vw;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -209,49 +212,83 @@
     // text-align: center;
   }
 
-  .hero {
-    .header {
-      &__breadcrumb {
-        display: none;
-      }
+  .header {
+    &__nav {
+      padding: 0;
+    }
+
+    &__breadcrumb {
+      display: none;
+    }
+
+    .search {
+      gap: 4vw;
+      margin-right: 4vw;
+
       &__icon {
-        width: 40vw;
-        height: 5vh;
-        // height: 10vh;
+        height: 8vw;
+        width: 8vw;
       }
     }
 
+    &__logo {
+      width: 40vw;
+      height: 8vh;
+      margin: auto;
+    }
+  }
+
+  .hero {
     .social-media {
       display: none;
     }
 
-    .hero {
-      &__btn {
-        font-size: 18px;
-        width: 100%;
-      }
-      &__heading {
-        line-height: 125%;
-        width: 100%;
-        font-size: 16vw;
-      }
+    &__btn {
+      font-size: 5vw;
+      width: 100%;
+      height: 8vh;
+      margin-top: 4px;
+      margin-bottom: 6vh;
+    }
+
+    &__heading {
+      text-align: center;
+      line-height: 110%;
+      width: 100%;
+      font-size: 16vw;
     }
 
     .explore-cards {
-      height: 64vh;
+      padding: 0;
+      height: 120vh;
+      width: 100%;
       margin: 0;
       flex-direction: column;
+      gap: 3vh;
     }
+
     .explore {
-      width: 68%;
+      gap: 1.7vh;
+      width: 100%;
+      height: 35%;
+      // height: 17%;
       flex-direction: column;
-      &__heading {
-        width: 57.6%;
-        font-size: 26.409px;
+
+      &__num {
+        font-size: 3.7vw;
+        margin: 0;
       }
+
+      &__heading {
+        width: 100%;
+        font-size: 5vw;
+        margin: 0;
+      }
+
       &__text {
         width: 100%;
-        font-size: 16px;
+        font-size: 3.3vw;
+        margin: 0;
       }
 
       &__poster {
@@ -259,146 +296,209 @@
       }
     }
   }
-  //TODO tablet
-  @media screen and (min-width: 768px) {
-  }
-  //TODO desktop
-  @media screen and (min-width: 1024px) {
-    .header {
-      width: 95vw;
-      padding-top: 2vw;
-
-      &__logo {
-        height: 40px;
-        width: 40px;
-      }
-
-      .search {
-        margin-right: 5vw;
-        gap: 20px;
-
-        &__icon {
-          width: 2.1vw;
-          height: 2.1vw;
-        }
-      }
-
-      &__nav {
-        gap: 62px;
-      }
-
-      &__breadcrumb {
-        height: 2px;
-      }
-
-      &__link {
-        font-size: 18px;
-        height: 3px;
-      }
-
+}
+//TODO tablet
+@media screen and (min-width: 768px) {
+  .header {
+    .search {
       &__icon {
-        width: 185.096px;
-        height: 68.749px;
-        // width: 70%;
+        width: 5.2vw;
+        height: 5.2vw;
       }
     }
 
-    .hero {
-      background: url(../img/section1/desert.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
+    &__logo {
+      width: 28vw;
+    }
+  }
 
-      &__heading {
-        // margin-top: 30vh;
-        width: 33vw;
-        font-size: 120px;
-        line-height: 130px;
-      }
+  .hero {
+    // padding-top: 5vh;
+    padding-bottom: 37vh;
 
-      &__btn {
-        font-size: 20px;
-        padding: 20px 50px;
-      }
+    &__heading {
+      width: 20%;
+      font-size: 8vw;
     }
 
-    .side-bar {
-      // width: 185px;
-      width: 9.3%;
-      gap: 200px;
-      top: 20vh;
+    &__btn {
+      width: 23vw;
+      font-size: 2vw;
+      margin-bottom: 7vh;
     }
+  }
 
-    // calendar
-    .calendar {
-      .active-stripe {
-        width: 4.002px;
-        height: 100px;
-      }
+  .explore-cards {
+    flex-direction: column;
+    gap: 5vh;
 
-      .inactive-stripe {
-        width: 2.001px;
-        height: 296px;
+    .explore {
+      gap: 1.2vw;
+      height: 55vh;
+      // height: 25%;
+
+      &__vid {
+        height: 57%;
       }
 
       &__num {
-        font-size: 16px;
-        width: 18px;
+        font-size: 2.3vw;
+      }
+
+      &__heading {
+        font-size: 3.4vw;
+      }
+      &__text {
+        font-size: 2.5vw;
+        width: 100%;
       }
     }
+  }
+}
+//TODO desktop
+@media screen and (min-width: 1024px) {
+  .header {
+    width: 95vw;
+    padding-top: 2vw;
 
-    .social-media {
-      // width: 4%;
-      gap: 12px;
-      top: 85vh;
+    &__logo {
+      height: 8vh;
+      width: 14vw;
+    }
+
+    .search {
+      margin-right: 5vw;
+      // gap: 20px;
 
       &__icon {
-        width: 40px;
-        height: 40px;
+        width: 3.2vw;
+        height: 3.2vw;
       }
     }
 
-    // explore cards
-    .explore-cards {
-      width: 100%;
-      height: 25vh;
-      gap: 14px;
-      // display: flex;
-      flex-direction: row;
+    &__nav {
+      gap: 62px;
     }
 
-    .explore {
-      height: 70%;
-      width: 15%;
-      // display: flex;
+    &__breadcrumb {
+      height: 2px;
+    }
+
+    &__link {
+      font-size: 18px;
+      height: 3px;
+    }
+
+    &__icon {
+      width: 185.096px;
+      height: 68.749px;
+      // width: 70%;
+    }
+  }
+
+  .hero {
+    background: url(../img/section1/desert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    &__heading {
+      text-align: start;
+      // margin-top: 30vh;
+      width: 33vw;
+      font-size: 120px;
+      line-height: 130px;
+    }
+
+    .hero {
+      &__btn {
+        font-size: 18px;
+        width: 14%;
+        padding: 1vw;
+        margin-left: 4vw;
+      }
+      &__heading {
+        line-height: 115%;
+        width: 40%;
+        font-size: 6vw;
+        margin-left: 4vw;
+      }
+    }
+
+    .explore-cards {
+      gap: 0;
+      height: 30vh;
+      margin-top: 20vh;
       flex-direction: row;
+    }
+    .explore {
+      gap: 1.6vh;
+      margin-top: auto;
+      margin-bottom: auto;
+      // width: 68%;
+      width: 22%;
+      flex-direction: column;
+      height: 70%;
+
+      &__num {
+        font-size: 1.2vw;
+      }
+
+      &__heading {
+        width: 100%;
+        font-size: 1.5vw;
+        // font-size: 26.409px;
+      }
+
+      &__text {
+        width: 100%;
+        font-size: 0.8vw;
+        // font-size: 16px;
+      }
+
+      &__poster {
+        width: 100%;
+      }
 
       &__container {
         width: 90vw;
       }
+    }
+  }
 
-      &__poster {
-        height: 110%;
-        width: 22%;
-      }
+  .side-bar {
+    // width: 185px;
+    width: 9.3%;
+    gap: 200px;
+    top: 20vh;
+  }
 
-      &__video {
-        width: 100%;
-        height: 100%;
-      }
+  // calendar
+  .calendar {
+    .active-stripe {
+      width: 4.002px;
+      height: 100px;
+    }
 
-      &__num {
-        font-size: 16px;
-      }
+    .inactive-stripe {
+      width: 2.001px;
+      height: 296px;
+    }
 
-      &__heading {
-        font-size: 26.409px;
-      }
+    &__num {
+      font-size: 16px;
+      width: 18px;
+    }
+  }
 
-      &__text {
-        width: 70%;
-        letter-spacing: 0.3px;
-      }
+  .social-media {
+    // width: 4%;
+    gap: 12px;
+    top: 85vh;
+
+    &__icon {
+      width: 40px;
+      height: 40px;
     }
   }
 }

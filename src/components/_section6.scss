@@ -1,8 +1,12 @@
-@import url('./utils/_mixins.scss');
-@import url('./utils/_variables.scss');
-@import url('./utils/_placeholders.scss');
-
-// ретинізовані зображення
+@mixin text-style($font-weight: 400, $font-size: 16px, $family: 'Roboto', $line-height: 30px, $color: #000, $align: center) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    font-family: $family;
+    line-height: $line-height;
+    color: $color;
+    text-align: $align;
+    letter-spacing: 3%;
+}
 
 .section6 {
     background-image: url('../img/section6/background.jpg');
@@ -50,14 +54,9 @@
     }
 }
 
-// інше
 .section6 {
     &__title {
-        // @include text-style(700, 42px, 'DM Sans', 50px, #FFFFFF, center);
-        font: 700 42px 'DM Sans', sans-serif;
-        line-height: 50px;
-        color: #FFFFFF;
-        text-align: center;
+        @include text-style(700, 42px, 'DM Sans', 50px, #FFFFFF, center);
         width: 1056px;
         margin: 0 auto;
         padding-top: 141px;
@@ -91,9 +90,6 @@
             margin-bottom: 255px;
 
             &__video-container {
-                // width: 233px;
-                // height: 151px;
-
                 .section6__video {
                     width: 233px;
                     height: 151px;
@@ -103,21 +99,16 @@
             .item__article {
                 display: flex;
                 flex-flow: column wrap;
-                width: 336px;
                 margin-left: 41px;
+                width: 290px;
 
                 .article__title {
-                    // @include text-style(700, 18px, 'DM Sans', 27px, #FFFFFF, );
-                    font: 700 18px 'DM Sans', sans-serif;
-                    line-height: 27px;
-                    color: #FFFFFF;
+                    @include text-style(700, 18px, 'DM Sans', 27px, #FFFFFF, left);
                 }
 
                 .article__text {
-                    // @include text-style(700, 18px, 'DM Sans', 28px, #FFFFFF, );
-                    font: 700 18px 'DM Sans', sans-serif;
-                    line-height: 28px;
-                    color: #FFFFFF70;
+                    @include text-style(700, 12px, 'DM Sans', 28px, #FFFFFF, left);
+                    opacity: 75%;
                     display: flex;
                     flex-wrap: wrap;
                 }
@@ -131,97 +122,35 @@
     height: 151px;
 }
 
-// Адаптив
-
-@media (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1440px) {
     .section6 {
         &__title {
-            // @include text-style(700, 42px, 'DM Sans', 50px, #FFFFFF, center);
-            font: 700 42px 'DM Sans', sans-serif;
-            line-height: 50px;
-            text-align: center;
-            width: 100%;
-            padding-top: 141px;
-        }
-
-        &__bigvideo-container {
-            width: 100%;
-            height: 100%;
-            margin-top: 67px;
-
-            video {
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-        &__box {
-            .box__item {
-                margin-top: 127px;
-                margin-bottom: 255px;
-
-                &__video-container {
-                    width: 100%;
-                    height: 100%;
-
-                    video {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-
-                .item__article {
-                    width: 100%;
-                    margin-left: 0;
-
-                    .article__title {
-                        // @include text-style(700, 42px, 'DM Sans', 50px, #FFFFFF, center);
-                        font: 700 42px 'DM Sans', sans-serif;
-                        line-height: 50px;
-                        text-align: center;
-                    }
-
-                    .article__text {
-                        // @include text-style(700, 42px, 'DM Sans', 50px, #FFFFFF, center);
-                        font: 700 42px 'DM Sans', sans-serif;
-                        line-height: 50px;
-                        text-align: center;
-                        display: flex;
-                        flex-wrap: wrap;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-@media (max-width: 1024px) {
-    .section6 {
-        &__title {
-            // @include text-style(700, 36px, 'DM Sans', 45px, #FFFFFF, center);
-            font: 700 36px 'DM Sans', sans-serif;
-            line-height: 45px;
-            text-align: center;
-            width: 100%;
+            @include text-style(700, 36px, 'DM Sans', 45px, #FFFFFF, center);
+            width: 90%;
             padding-top: 100px;
         }
 
         &__bigvideo-container {
             width: 100%;
-            height: 100%;
+            height: auto;
             margin-top: 50px;
-
+            
             video {
-                width: 100%;
-                height: 100%;
+                width: 90%;
+                height: auto;
             }
         }
 
         &__box {
+            margin: 0;
+            padding: 0;
+            gap: 0;
+            margin: 50px 0;
+
             .box__item {
-                margin-top: 50px;
-                margin-bottom: 100px;
+                margin: 0;
+                margin-bottom: 50px;
+                flex-flow: row wrap;
 
                 &__video-container {
                     width: 100%;
@@ -234,21 +163,21 @@
                 }
 
                 .item__article {
-                    width: 100%;
-                    margin-left: 0;
+                    display: flex;
+                    flex-flow: column wrap;
+                    width: 336px;
+                    margin-left: 50px;
+                    margin-top: 10px;
 
                     .article__title {
-                        // @include text-style(700, 36px, 'DM Sans', 45px, #FFFFFF, center);
-                        font: 700 36px 'DM Sans', sans-serif;
-                        line-height: 45px;
-                        text-align: center;
+                        @include text-style(700, 18px, 'DM Sans', 28px, #FFFFFF, left);
                     }
 
                     .article__text {
-                        // @include text-style(700, 36px, 'DM Sans', 45px, #FFFFFF, center);
-                        font: 700 36px 'DM Sans', sans-serif;
-                        line-height: 45px;
-                        text-align: center;
+                        @include text-style(700, 18px, 'DM Sans', 28px, #FFFFFF, left);
+                        display: flex;
+                        flex-wrap: wrap;
+                        opacity: 75%;
                     }
                 }
             }
@@ -259,77 +188,20 @@
 @media (max-width: 768px) {
     .section6 {
         &__title {
-            // @include text-style(700, 36px, 'DM Sans', 45px, #FFFFFF, center);
-            font: 700 36px 'DM Sans', sans-serif;
-            line-height: 45px;
-            text-align: center;
-            width: 100%;
-            padding-top: 100px;
+            @include text-style(700, 24px, 'DM Sans', 30px, #FFFFFF, center);
+            width: 90%;
+            padding-top: 50px;
         }
 
         &__bigvideo-container {
-            width: 100%;
-            height: 100%;
             margin-top: 50px;
-
-            video {
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-        &__box {
-            .box__item {
-                margin-top: 50px;
-                margin-bottom: 100px;
-
-                &__video-container {
-                    width: 100%;
-                    height: 100%;
-
-                    video {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-
-                .item__article {
-                    width: 100%;
-                    margin-left: 0;
-
-                    .article__title {
-                        // @include text-style(700, 36px, 'DM Sans', 45px, #FFFFFF, center);
-                        font: 700 36px 'DM Sans', sans-serif;
-                        line-height: 45px;
-                        text-align: center;
-                    }
-
-                    .article__text {
-                        // @include text-style(700, 36px, 'DM Sans', 45px, #FFFFFF, center);
-                        font: 700 36px 'DM Sans', sans-serif;
-                        line-height: 45px;
-                        text-align: center;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 420px) {
-    .section6 {
-        &__title {
-            // @include text-style(700, 24px, 'DM Sans', 30px, #FFFFFF, center);
-            font: 700 24px 'DM Sans', sans-serif;
-            line-height: 30px;
-        }
-
-        &__bigvideo-container {
-            margin-top: 83px;
+            width: 100%;
+            height: auto;
 
             video {
                 border-radius: 10px;
                 width: 90%;
+                height: auto;
             }
         }
 
@@ -343,17 +215,18 @@
                 margin-bottom: 20px;
 
                 .item__article {
+                    width: 90%;
+                    margin: 0 auto;
                     .article__title {
-                        // @include text-style(700, 22px, 'DM Sans', 33px, #FFFFFF, center);
-                        font: 700 22px 'DM Sans', sans-serif;
-                        line-height: 33px;
+                        @include text-style(700, 22px, 'DM Sans', 33px, #FFFFFF, center);
                         margin-top: 32px;
                     }
 
                     .article__text {
-                        // @include text-style(700, 16px, 'DM Sans', 24px, #FFFFFF, center);
-                        font: 400 16px 'DM Sans', sans-serif;
-                        line-height: 24px;
+                        @include text-style(400, 16px, 'DM Sans', 24px, #FFFFFF, center);
+                        opacity: 75%;
+                        width: 60%;
+                        margin: 0 auto;
                         margin-top: 15px;
                     }
                 }

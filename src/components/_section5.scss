@@ -8,19 +8,18 @@
   padding: 0 15px;
 }
 .information {
-  padding-top: 249px;
-  padding-bottom: 256px;
+  padding-top: 149px;
+  padding-bottom: 156px;
   background-image: url('../img/section5/backrground.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-    .information {
-        background-image: url('../img/section5/backrground@2x.jpg');
-    }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .information {
+    background-image: url('../img/section5/backrground@2x.jpg');
+  }
 }
 
 .information__h2 {
