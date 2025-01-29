@@ -116,3 +116,12 @@
     }
     
 }
+
+@media(max-width:800px){
+    .section-3__slider-img{
+        width: 90%;
+        height: auto;
+        /* display: block; */
+        margin: 0 auto;
+    }
+}

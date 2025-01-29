@@ -3,13 +3,14 @@
 @import url('./utils/_placeholders.scss');
 
    .section-4 {
-     padding: 201px 20px;
+    display: block;
      background-size: cover;
      background-position: center;
      background: #020C21;
-     opacity: 0.8;
+     opacity: 0.9;
      position: relative;
-     top: -25vh;
+     top: -53.99vh;
+     margin: 0 auto;
    }
    
    .section-4 h2 {
@@ -22,7 +23,7 @@
    
    .section-4 p {
      max-width: 484px;
-     margin: 0 auto 40px auto;
+     margin: 0 auto 40px ;
      font-size: 0,5rem;
      line-height: 1.5;
      color:#cccccc;
