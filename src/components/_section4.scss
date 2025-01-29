@@ -1,60 +1,59 @@
 @import url('./utils/_mixins.scss');
 @import url('./utils/_variables.scss');
 @import url('./utils/_placeholders.scss');
+.section-4 {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background: #020C21;
+  opacity: 0.9;
+  position: relative;
+  margin: 0 auto;
+  padding: 100px;
 
-   .section-4 {
-     display: block;
-     background-size: cover;
-     background-position: center;
-     background: #020C21;
-     opacity: 0.9;
-     position: relative;
-     margin: 0 auto;
-     padding: 100px;
-   }
-   
-   .section-4 h2 {
+  h2 {
     max-width: 484px;
-     margin: 0 auto 40px auto;
-     font-size: 4rem;
-     line-height: 1.5;
-     color:white;
-   }
-   
-   .section-4 p {
-     max-width: 484px;
-     margin: 0 auto 40px ;
-     font-size: 0,5rem;
-     line-height: 1.5;
-     color:#cccccc;
-   }
-   
-   .stats {
-     display: flex;
-     justify-content: center;
-     gap: 40px;
-   }
-   
-   .stat-item {
-     text-align: center;
-   }
-   
-   .stat-item h3 {
-     font-size: 2.5rem;
-     color: #ff4c4c;
-     margin: 0 0 10px 0;
-   }
-   
-   .stat-item p {
-     margin: 0;
-     font-size: 1rem;
-     color: #cccccc;
-   }
-   
-   @media (max-width: 768px) {
-     .stats {
-      padding: 20px;
-      margin: 20px;
-       flex-direction: column;
-     }
-   }
+    margin: 0 auto 40px auto;
+    font-size: 4rem;
+    line-height: 1.5;
+    color: white;
+  }
+
+  p {
+    max-width: 484px;
+    margin: 0 auto 40px;
+    font-size: 0.5rem; // Виправлено: кома замінена на крапку
+    line-height: 1.5;
+    color: #cccccc;
+  }
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+
+  .stat-item {
+    text-align: center;
+
+    h3 {
+      font-size: 2.5rem;
+      color: #ff4c4c;
+      margin: 0 0 10px 0;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1rem;
+      color: #cccccc;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .stats {
+    padding: 20px;
+    margin: 20px;
+    flex-direction: column;
+  }
+}
