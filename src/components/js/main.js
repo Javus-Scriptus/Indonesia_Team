@@ -44,11 +44,14 @@ $(function(){
               }
             },
             {
-              breakpoint: 480,
+              breakpoint: 415,
               settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: false
+                slidesToShow: 10,
+                prevArrow:  '<img class="section3-slider__arrow slider__arrow-left" src="" alt="">',
+                nextArrow: '<img class="section3-slider__arrow slider__arrow-left" src="" alt="">' ,
+                dots: false,
+                autoplay: true,
+                infinite: true,
               }
             }
           ]
