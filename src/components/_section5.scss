@@ -6,6 +6,16 @@
   width: 614px;
   margin: 0 auto;
   padding: 0 15px;
+  @media screen and (min-width: 768px) {
+    width: 502px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 314px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 }
 .information {
   padding-top: 149px;
@@ -14,6 +24,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (max-width: 767px) {
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -30,6 +44,12 @@
   line-height: 50px;
   text-align: center;
   color: #000000;
+  @media screen and (min-width: 768px) {
+    font-size: 50px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 40px;
+  }
 }
 .information__p {
   font-family: 'DM Sans';
@@ -40,6 +60,14 @@
   text-align: center;
   margin-top: 32px;
   color: #6f7787;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 .information__button {
   background-color: #dd2242;
@@ -57,4 +85,15 @@
   color: #ffffff;
   margin-left: 202px;
   cursor: pointer;
+  @media screen and (min-width: 768px) {
+    width: 314px;
+    height: 73px;
+    padding: 16px 44px 16px 44px;
+    margin-top: 50px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 314px;
+    height: 73px;
+    padding: 16px 44px 16px 44px;
+  }
 }
