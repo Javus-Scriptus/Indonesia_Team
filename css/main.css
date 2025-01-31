@@ -10,10 +10,9 @@
 @import url("./_section6.scss");
 @import url("./_section7.scss");
 @import url("./_section8.scss");
-@import url("./_section9.scss");
 @import url("./_footer.scss");
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   font-family: "Poppins";
 }
 body button {
@@ -32,8 +31,20 @@ body::-webkit-scrollbar {
 }
 
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  width: 90vw;
+  width: 87vw;
   outline: 2px solid red;
+  position: relative;
+  overflow-x: hidden !important;
+}
+
+.adaptive-container {
+  width: 87vw;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden !important;
 }
