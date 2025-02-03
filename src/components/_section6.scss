@@ -9,7 +9,7 @@
 }
 
 .section6 {
-    background-image: url('../img/section6/background.jpg');
+    background-image: url('https://raw.githubusercontent.com/Javus-Scriptus/Indonesia_Team/main/src/img/section6/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@
 
                 @media (-webkit-min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi) {
-                    poster: url("../img/section6/img-1@2x.jpg");
+                    poster: url("https://raw.githubusercontent.com/Javus-Scriptus/Indonesia_Team/main/src/img/section6/img-1@2x.jpg");
                 }
             }
         }
@@ -30,7 +30,7 @@
 
                 @media (-webkit-min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi) {
-                    poster: url("../img/section6/img-2@2x.jpg");
+                    poster: url("https://raw.githubusercontent.com/Javus-Scriptus/Indonesia_Team/main/src/img/section6/img-2@2x.jpg");
                 }
             }
         }
@@ -40,7 +40,7 @@
 
                 @media (-webkit-min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi) {
-                    poster: url("../img/section6/img-3@2x.jpg");
+                    poster: url("https://raw.githubusercontent.com/Javus-Scriptus/Indonesia_Team/main/src/img/section6/img-3@2x.jpg");
                 }
             }
         }
@@ -50,7 +50,7 @@
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .section6 {
-        background-image: url('../img/section6/background@2x.jpg');
+        background-image: url('https://raw.githubusercontent.com/Javus-Scriptus/Indonesia_Team/main/src/img/section6/background@2x.jpg');
     }
 }
 
